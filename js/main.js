@@ -49,14 +49,19 @@ function parseNum(data) {
 function renderData() {
     $("#subway-way1").text(LocationData.realtimeArrivalList[0].trainLineNm);
     $("#subway-way2").text(LocationData.realtimeArrivalList[1].trainLineNm);
-    $("#station1-1 .subway-name").text(LocationData.realtimeArrivalList[0].statnNm);
+
+    $("#station1-2 .subway-name").text(LocationData.realtimeArrivalList[0].statnNm);
     $("#station2-3 .subway-name").text(LocationData.realtimeArrivalList[0].statnNm);
-    $("#station1-2 .subway-name").text(LocationData.realtimeArrivalList[0].arvlMsg3);
+
+    $("#station1-1 .subway-name").text(LocationData.realtimeArrivalList[0].bstatnNm);
+    $("#station2-4 .subway-name").text(LocationData.realtimeArrivalList[1].bstatnNm);
+
+    $("#station1-3 .subway-name").text(LocationData.realtimeArrivalList[0].arvlMsg3);
+    $("#station1-4 .subway-name").text(LocationData.realtimeArrivalList[2].arvlMsg3);
     $("#station2-1 .subway-name").text(LocationData.realtimeArrivalList[3].arvlMsg3);
-    $("#station1-3 .subway-name").text(LocationData.realtimeArrivalList[2].arvlMsg3);
     $("#station2-2 .subway-name").text(LocationData.realtimeArrivalList[1].arvlMsg3);
-    $("#station1-2 .subway-dot").text(parseNum(LocationData.realtimeArrivalList[0].arvlMsg2));
-    $("#station1-3 .subway-dot").text(parseNum(LocationData.realtimeArrivalList[2].arvlMsg2));
+    $("#station1-3 .subway-dot").text(parseNum(LocationData.realtimeArrivalList[0].arvlMsg2));
+    $("#station1-4 .subway-dot").text(parseNum(LocationData.realtimeArrivalList[2].arvlMsg2));
     $("#station2-1 .subway-dot").text(parseNum(LocationData.realtimeArrivalList[3].arvlMsg2));
     $("#station2-2 .subway-dot").text(parseNum(LocationData.realtimeArrivalList[1].arvlMsg2));
     
