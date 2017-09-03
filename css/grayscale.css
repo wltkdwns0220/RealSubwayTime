@@ -227,7 +227,7 @@ body {
 }
 
 .subway-way {
-  font-size: 16px;
+  font-size: 25px;
 }
 
 .subway-station {
@@ -285,6 +285,10 @@ body {
   font-size: 30px;
 }
 
+#station1-1 .subway-dot{
+  background-color: #6A9BD9;
+}
+
 #station1-3 {
   left: 70%;
   margin-left: -24%;
@@ -307,6 +311,10 @@ body {
 #station2-3 {
   left: 70%;
   margin-left: -24%;
+}
+
+#station2-4 .subway-dot{
+  background-color: #6A9BD9;
 }
 
 #station2-3 .subway-name{
