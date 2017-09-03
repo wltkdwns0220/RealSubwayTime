@@ -6,7 +6,7 @@ $host.mag();
 var stationName = " ";
 var APP_ID = "4f66435472776c74383857486b6d48";
 var authPreFix = "/json/realtimeStationArrival/1/3/";
-var currentStationURL = "http://swopenAPI.seoul.go.kr/api/subway/";
+var currentStationURL = "https://cors-anywhere.herokuapp.com/http://swopenAPI.seoul.go.kr/api/subway/";
 var LocationData = {};
 
 function startSearch() {
@@ -24,8 +24,6 @@ function requestSubwayInfo() {
     $.ajax({
         type: 'GET',
         url: requestURL,
-        // crossDomain: true,
-        // dataType: 'jsonp',
         success: function(data) {
             console.log(data);
             saveData(data);
