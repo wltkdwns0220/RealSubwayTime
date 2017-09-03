@@ -202,8 +202,12 @@ body {
 .location-icon {
   position: absolute;
   width: 30px;
-  top: 30%;
+  top: 40%;
   margin-left: -15px;
+}
+
+.subway-way {
+  font-size: 16px;
 }
 
 .subway-station {
@@ -213,6 +217,7 @@ body {
 }
 
 .subway-dot {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   z-index: 3;
   position: absolute;
   border-radius: 50%;
@@ -223,6 +228,7 @@ body {
   margin-left: -15px;
   background: white;
   border: 2px solid black;
+  color: black;
 }
 
 .subway-name {
